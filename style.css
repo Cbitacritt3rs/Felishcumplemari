@@ -1,0 +1,115 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.pantalla {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.esconder {
+  display: none;
+}
+
+#img1 {
+  background-image: url('Gato1.png');
+}
+
+#img2 {
+  background-image: url('Carta.png');
+}
+
+#img3 {
+  background-image: url('Dibujoc1.png');
+}
+
+#img4 {
+  background-image: url('Dibujoc2.png');
+}
+
+.cartapicable, .dibujoizquierdo, .dibujoderecho {
+    position: absolute;
+    cursor: pointer;
+}
+
+.cartapicable {
+  background-image: url('Marco2.png');
+  background-size: 100%;
+  width: 140px;
+  height: 65px;
+  top: 54.5%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  animation: marcotamaño 3s infinite;
+}
+
+.dibujoizquierdo {
+  background-image: url('Marcoiz.png');
+  background-size: 100%;
+  width: 120px;
+  height: 170px;
+  left: 16.5%;
+  bottom: 12.5%;
+  animation: marcotamaño2 3s infinite;
+}
+
+.dibujoderecho {
+  background-image: url('Marcode.png');
+  background-size: 100%;
+  width: 140px;
+  height: 110px;
+  right: 9.5%;
+  bottom: 13.5%;
+  animation: marcotamaño2 3s infinite;
+}
+
+.volveracarta {
+  background-image: url('Flecha.png');
+  background-size: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 40px;
+  bottom: 5%;
+  left: 5%;
+  animation: volver 2.5s infinite;
+}
+
+@keyframes marcotamaño {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  } 
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+@keyframes marcotamaño2 {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes volver {
+  0%, 100% {
+    transform: translate(0%) scale(1);
+  }
+  50% {
+    transform: translate(-8%) scale(1);
+  }
+}

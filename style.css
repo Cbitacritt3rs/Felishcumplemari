@@ -61,7 +61,7 @@ body, html {
   width: 120px;
   height: 170px;
   left: 16.5%;
-  bottom: 15%;
+  bottom: 20%;
   animation: marcotamaño2 3s infinite;
 }
 
@@ -71,7 +71,7 @@ body, html {
   width: 140px;
   height: 110px;
   right: 9.5%;
-  bottom: 16%;
+  bottom: 21%;
   animation: marcotamaño2 3s infinite;
 }
 
